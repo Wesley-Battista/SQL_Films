@@ -1,0 +1,192 @@
+ALTER TABLE ENTRETERIMENTO ADD COLUMN NACIONALIDADE VARCHAR(50); 
+-- Atualizar a nacionalidade para cada filme
+
+-- Para 'Stranger Things'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Stranger Things';
+
+-- Para 'Black Mirror'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Reino Unido'
+WHERE NOME = 'Black Mirror';
+
+-- Para 'The Irishman'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'The Irishman';
+
+-- Para 'Breaking Bad'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Breaking Bad';
+
+-- Para 'The Crown'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Reino Unido'
+WHERE NOME = 'The Crown';
+
+-- Para 'Inception'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Inception';
+
+-- Para 'Friends'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Friends';
+
+-- Para 'The Godfather'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'The Godfather';
+
+-- Para 'La Casa de Papel'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Espanha'
+WHERE NOME = 'La Casa de Papel';
+
+-- Para 'Pulp Fiction'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Pulp Fiction';
+
+-- Para 'The Witcher'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'The Witcher';
+
+-- Para 'The Matrix'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'The Matrix';
+
+-- Para 'Money Heist'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Espanha'
+WHERE NOME = 'Money Heist';
+
+-- Para 'Forrest Gump'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Forrest Gump';
+
+-- Para 'Vikings'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Irlanda'
+WHERE NOME = 'Vikings';
+
+-- Para 'The Dark Knight'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'The Dark Knight';
+
+-- Para 'Grey’s Anatomy'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Grey’s Anatomy';
+
+-- Para 'The Shawshank Redemption'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'The Shawshank Redemption';
+
+-- Para 'Gladiador'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Gladiador';
+
+-- Para 'O Senhor dos Anéis: A Sociedade do Anel'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'O Senhor dos Anéis: A Sociedade do Anel';
+
+-- Para 'Clube da Luta'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Clube da Luta';
+
+-- Para 'Cidade de Deus'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Brasil'
+WHERE NOME = 'Cidade de Deus';
+
+-- Para 'Kill Bill: Volume 1'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Kill Bill: Volume 1';
+
+-- Para 'Entrevista com o Vampiro'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Entrevista com o Vampiro';
+
+-- Para 'Bastardos Inglórios'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Bastardos Inglórios';
+
+-- Para 'Sr. e Sra. Smith'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Estados Unidos'
+WHERE NOME = 'Sr. e Sra. Smith';
+
+-- Para 'Tropa de Elite'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Brasil'
+WHERE NOME = 'Tropa de Elite';
+
+-- Para 'Central do Brasil'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Brasil'
+WHERE NOME = 'Central do Brasil';
+
+-- Para 'O Auto da Compadecida'
+UPDATE ENTRETERIMENTO
+SET NACIONALIDADE = 'Brasil'
+WHERE NOME = 'O Auto da Compadecida';
+
+
+
+
+ALTER TABLE ENTRETERIMENTO
+ADD COLUMN RANKING INT;
+
+ALTER TABLE ENTRETERIMENTO
+ADD COLUMN RANKING_TIPO VARCHAR(50);
+
+ALTER TABLE ENTRETERIMENTO
+ADD COLUMN RANKING_NOME VARCHAR(50);
+
+
+INSERT INTO ENTRETERIMENTO (NOME, TIPO, DIRETOR, ATOR_PRINCIPAL, ATRIZ_PRINCIPAL, ANO_LANCAMENTO, DURACAO_MINUTOS, CLASSIFICACAO_ETARIA, GENERO, NACIONALIDADE, RANKING_NOME, RANKING_TIPO)
+VALUES 
+('Dark', 'SÉRIE', 'Baran bo Odar', 'Louis Hofmann', 'Lisa Vicari', 2017, 60, '16+', 'Thriller', 'Alemanha', 'Netflix', 'Mundial');
+
+INSERT INTO ENTRETERIMENTO (NOME, TIPO, DIRETOR, ATOR_PRINCIPAL, ATRIZ_PRINCIPAL, ANO_LANCAMENTO, DURACAO_MINUTOS, CLASSIFICACAO_ETARIA, GENERO, NACIONALIDADE, RANKING_NOME, RANKING_TIPO)
+VALUES 
+('Roma', 'FILME', 'Alfonso Cuarón', 'Yalitza Aparicio', 'Marina de Tavira', 2018, 135, '16+', 'Thriller/Drama', 'México', 'Netflix', 'Mundial');
+
+INSERT INTO ENTRETERIMENTO (NOME, TIPO, DIRETOR, ATOR_PRINCIPAL, ATRIZ_PRINCIPAL, ANO_LANCAMENTO, DURACAO_MINUTOS, CLASSIFICACAO_ETARIA, GENERO, NACIONALIDADE, RANKING_NOME, RANKING_TIPO)
+VALUES 
+('The Boys', 'SÉRIE', 'Eric Kripke', 'Karl Urban', 'Elisabeth Shue', 2019, 55, '18+', 'Ação', 'Estados Unidos', 'Amazon Prime', 'Mundial');
+
+INSERT INTO ENTRETERIMENTO (NOME, TIPO, DIRETOR, ATOR_PRINCIPAL, ATRIZ_PRINCIPAL, ANO_LANCAMENTO, DURACAO_MINUTOS, CLASSIFICACAO_ETARIA, GENERO, NACIONALIDADE, RANKING_NOME, RANKING_TIPO)
+VALUES 
+('The Grand Tour', 'SÉRIE', 'Jeremy Clarkson', 'Jeremy Clarkson', 'Richard Hammond', 2016, 60, '14+', 'Comédia', 'Reino Unido', 'Amazon Prime', 'Mundial');
+
+INSERT INTO ENTRETERIMENTO (NOME, TIPO, DIRETOR, ATOR_PRINCIPAL, ATRIZ_PRINCIPAL, ANO_LANCAMENTO, DURACAO_MINUTOS, CLASSIFICACAO_ETARIA, GENERO, NACIONALIDADE, RANKING_NOME, RANKING_TIPO)
+VALUES 
+('Cidade de Deus', 'FILME', 'Fernando Meirelles', 'Alexandre Rodrigues', 'Alice Braga', 2002, 130, '18+', 'Crime/Drama', 'Brasil', 'Meu Rank', 'Nacional');
+
+INSERT INTO ENTRETERIMENTO (NOME, TIPO, DIRETOR, ATOR_PRINCIPAL, ATRIZ_PRINCIPAL, ANO_LANCAMENTO, DURACAO_MINUTOS, CLASSIFICACAO_ETARIA, GENERO, NACIONALIDADE, RANKING_NOME, RANKING_TIPO)
+VALUES 
+('O Auto da Compadecida', 'FILME', 'Guel Arraes', 'Matheus Nachtergaele', 'Denise Fraga', 2000, 104, '12+', 'Comédia/Drama', 'Brasil', 'Meu Rank', 'Nacional');
+
+-- Atualizar o número do ranking para cada filme com base no ano de lançamento
+UPDATE ENTRETERIMENTO e
+JOIN (
+    SELECT ID, RANK() OVER (ORDER BY ANO_LANCAMENTO) AS RANKING
+    FROM ENTRETERIMENTO
+) AS ranked_films ON e.ID = ranked_films.ID
+SET e.RANKING = ranked_films.RANKING;
